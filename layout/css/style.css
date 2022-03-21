@@ -1,0 +1,296 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.header { 
+	width: 100%;
+	margin-top: 56px;
+}
+ 
+.header__logo {
+	display: block;
+	width: 100px;
+	height: auto;
+	margin: 0 auto;
+
+}
+
+.heading {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+}
+
+.header__text {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+
+}
+
+.container {
+	width: 1000px;	
+	margin: 0 auto;
+}
+
+.top__img {
+	position: relative;
+	margin-top: 78px;
+}
+
+.img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	transform: scale(0);
+	transition: .3s ease;
+
+}
+
+.top__img:hover .overlay {
+	transform: scale(1);
+}
+
+.top__auth {
+	margin-top: 63px;
+}
+
+.top__button {
+	display: block;
+	width: 543px;
+	margin: 0 auto;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	background: #D9E97C;
+	color: #000000;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.top__button:hover {
+	background: #6C743C;
+}
+
+.top__text {
+	width: 559px;
+	margin: 0 auto;
+	margin-top: 23px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+
+	color: #2B2A2A;
+}
+
+.top__text a {
+	text-decoration: none;
+	color: #6C743C;
+}
+
+.top__text a:hover {
+	text-decoration: underline;
+}
+
+
+.resolved {
+	margin-top: 133px;
+}
+
+.resolved__items {
+	margin-top: 62px;
+}
+
+.resolved__item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 74px;
+}
+
+.resolved__info {
+	display: flex;
+	flex-direction: column;
+}
+
+.resolved__item:nth-child(even) .resolved__img {
+	order: 2;
+}
+
+.resolved__item:nth-child(even) {
+	justify-content: flex-end;
+	text-align: right;
+}
+
+.resolved__item:nth-child(even) .resolved__info {
+	margin-right: 56px;
+}
+
+
+.resolved__img {
+	width: 554px;
+	height: 370px;
+	position: relative;
+}
+
+.resolved__img:hover .overlay {
+	transform: scale(1);
+}
+
+.resolved__info {
+	margin-left: 56px;
+}
+
+.resolved__heading {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 33px;
+	margin-bottom: 42px;
+}
+
+.resolved__date {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	height: 46px;
+
+	color: #2B2A2A;
+}
+
+.resolved__text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+
+	color: #2B2A2A;
+}
+
+.footer {
+	width: 100%;
+	background: #2B2A2A;
+	padding: 19px 0;
+}
+
+.footer__img {
+	width: 61px;
+	display: block;
+	margin: 0 auto;
+}
+
+.login {
+	margin-top: 96px;
+	margin-bottom: 195px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login-form__input {
+	border: none;
+	width: 468px;
+	height: 43px;
+	text-align: center;
+	background: #ECECEC;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 11px;
+
+	font-size: 18px;
+	line-height: 21px;
+}
+
+
+.login-form__button {
+	border: none;
+	width: 468px;
+	margin: 0 auto;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	background: #D9E97C;
+	color: #000000;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-top: 13px;
+}
+
+.login-form__button:hover {
+	background: #6C743C;
+}
+
+.register {
+	margin-top: 123px;
+	margin-bottom: 178px;
+}
+
+.register-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.register-form__input {
+	border: none;
+	width: 468px;
+	height: 43px;
+	text-align: center;
+	background: #ECECEC;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 11px;
+
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.register-form__button {
+	border: none;
+	width: 468px;
+	margin: 0 auto;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	background: #D9E97C;
+	color: #000000;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-top: 13px;
+}
